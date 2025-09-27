@@ -8,6 +8,8 @@ and offers a *simple* and *intuitive* API.
 
 My personal text is written here ...
 
+Next version 1.0.2
+
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
 
