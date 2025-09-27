@@ -10,6 +10,8 @@ My personal text is written here ...
 
 Test: new version 3.0.2
 
+development: working on something new ...
+
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
 
