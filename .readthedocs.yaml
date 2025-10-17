@@ -24,6 +24,7 @@ build:
     pre_build:
       - python -m sphinx -T --keep-going -b html -d _build/doctrees -D language=en docs/source $READTHEDOCS_OUTPUT/html
       - ls -a
+      - ls -a docs/source
     # build:
       # html:
         # - echo "Re-running the default RTD build"
@@ -34,4 +35,5 @@ build:
     post_build:
       # - python -m sphinx -T --keep-going -b html -d _build/doctrees -D language=en docs/source $READTHEDOCS_OUTPUT/html
       - ls -a
+      - ls -a docs/source
       - env
