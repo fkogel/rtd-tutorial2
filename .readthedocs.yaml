@@ -25,4 +25,4 @@ build:
       - echo "Re-running the default RTD build"
       # Run sphinx-build manually a second time for HTML
       # - sphinx-build -b html docs/source $READTHEDOCS_OUTPUT/html
-      - python -m sphinx -T -W --keep-going -b html -d _build/doctrees -D language=en . $READTHEDOCS_OUTPUT/html
+      - sphinx-build -T -W --keep-going -b html -d _build/doctrees -D language=en . $READTHEDOCS_OUTPUT/html
