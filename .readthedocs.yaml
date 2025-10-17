@@ -1,32 +1,22 @@
-version: 2
+version: "2"
 
-# Python environment
 python:
-  version: 3.10
   install:
-    # Install your package and docs dependencies
+    # Install our python package before building the docs
     - method: pip
       path: .
       extra_requirements:
         - doc
-    # Make sure Sphinx is installed
-    - requirements: docs/requirements.txt  # should include sphinx
 
-# Sphinx configuration
 sphinx:
   configuration: docs/source/conf.py
   fail_on_warning: true
 
-# Output formats
 formats:
   - pdf
   - epub
 
-# Build image and custom commands
 build:
-  image: ubuntu-22.04
-  commands:
-    - echo "🔁 First Sphinx build (to generate objects.inv)..."
-    - python -m sphinx -b html docs/source _build/html || true
-    - echo "✅ Second Sphinx build (resolving intersphinx links)..."
-    - python -m sphinx -b html docs/source _build/html
+  os: "ubuntu-22.04"
+  tools:
+    python: "3.10"
