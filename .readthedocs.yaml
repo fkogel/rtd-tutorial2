@@ -23,6 +23,9 @@ formats:
 
 # Correct syntax to run custom build commands
 build:
+  os: "ubuntu-22.04"
+  tools:
+    python: "3.10"
   commands:
     - echo "First Sphinx build (to generate objects.inv)..."
     - sphinx-build -b html docs/source _build/html || true
