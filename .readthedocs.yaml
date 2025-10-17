@@ -24,7 +24,7 @@ formats:
 # Correct syntax to run custom build commands
 build:
   commands:
-    - echo "🔁 First Sphinx build (to generate objects.inv)..."
+    - echo "First Sphinx build (to generate objects.inv)..."
     - sphinx-build -b html docs/source _build/html || true
-    - echo "✅ Second Sphinx build (resolving intersphinx links)..."
+    - echo "Second Sphinx build (resolving intersphinx links)..."
     - sphinx-build -b html docs/source _build/html
